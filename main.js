@@ -9,8 +9,8 @@ const form = document.getElementById('search-form');
 const gallery = document.getElementById('gallery');
 const loader = document.getElementById('loader');
 
-// ВАШ КЛЮЧ API ВІД PIXABAY
-const API_KEY = '56185900-b6424d0985ebf91c94381f7f4'; 
+// КЛЮЧ API ВІД PIXABAY
+const API_KEY = 'XXX'; 
 
 // Ініціалізуємо бібліотеку SimpleLightbox один раз
 const lightbox = new SimpleLightbox('.gallery a', {
