@@ -1,0 +1,103 @@
+/* Базові налаштування */
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fcfcfc;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Форма пошуку */
+.search-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-form input {
+    width: 270px;
+    padding: 8px 16px;
+    border: 1px solid #808080;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.search-form button {
+    padding: 8px 16px;
+    background-color: #4e75ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.search-form button:hover {
+    background-color: #6c8cff;
+}
+
+/* Галерея (Сітка) */
+.gallery {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    max-width: 1128px; /* Під 3 колонки */
+}
+
+.gallery-item {
+    width: calc((100% - 48px) / 3); /* 3 картки в ряд */
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+/* Картинка */
+.gallery-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Блок з інформацією (Лайки, перегляди) */
+.info {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 5px;
+    border-top: 1px solid #eeeeee;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    color: #2b2b2b;
+}
+
+/* --- Стилі для CSS-Loader (Спінер) --- */
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: #4e75ff;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes rotation {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
